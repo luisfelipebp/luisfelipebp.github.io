@@ -1,0 +1,97 @@
+@import "./header.css";
+@import "./home.css";
+@import "./habilidades.css";
+@import "./projetos.css";
+@import "./footer.css";
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 72px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+
+h1::before {
+  content: url(../images/Detalhe.svg);
+  display: inline-block;
+  top: -35px;
+  left: -10px;
+  z-index: 1;
+}
+
+.animacao {
+  animation: animeLeft 0.3s forwards;
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime].anime {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes animeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-0);
+  }
+}
+
+@media (max-width: 1020px) {
+  h1::before {
+    content: none;
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 36px;
+    line-height: 48px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    position: relative;
+  }
+}

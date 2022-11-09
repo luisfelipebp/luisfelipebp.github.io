@@ -1,0 +1,85 @@
+.footer-bg {
+  background: #000000;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 1400px;
+  padding: 100px 60px 100px 60px;
+  margin: 0 auto;
+}
+
+.footer-itens {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.footer-texto {
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #bcb6b6;
+}
+
+.footer-texto span {
+  color: #ffffff;
+}
+
+.footer-contato h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #565656;
+}
+
+.footer-contato p {
+  font-family: "Roboto";
+  font-style: 300;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  color: #ffffff;
+}
+.footer-icons {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  transition: 0.1s;
+}
+.footer-icons:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+@media (max-width: 1020px) {
+  .footer-itens {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .footer-container {
+    text-align: center;
+    padding: 50px 60px 50px 60px;
+  }
+}
+
+@media (max-width: 530px) {
+  .footer-texto {
+    font-size: 16px;
+  }
+  .footer-contato h3 {
+    font-size: 18px;
+  }
+
+  .footer-contato p {
+    font-size: 20px;
+  }
+}
