@@ -79,6 +79,10 @@
   border-radius: 10px; */
 }
 
+.andamento {
+  color: #9e9e9e;
+}
+
 @media (max-width: 1020px) {
   .habilidades-item {
     display: flex;
