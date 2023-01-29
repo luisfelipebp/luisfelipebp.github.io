@@ -42,17 +42,17 @@ containerProjetos.forEach((containerProjeto) => {
 
 const menuItens = document.querySelectorAll(".header-lista a[href^='#']");
 
-function scrollSuave(event) {
-  event.preventDefault();
-  const element = event.target;
-  const id = element.getAttribute("href");
-  const section = document.querySelector(id).offsetTop;
+// function scrollSuave(event) {
+//   event.preventDefault();
+//   const element = event.target;
+//   const id = element.getAttribute("href");
+//   const section = document.querySelector(id).offsetTop;
 
-  window.scroll({
-    top: section,
-    behavior: "smooth",
-  });
-}
+//   window.scroll({
+//     top: section,
+//     behavior: "smooth",
+//   });
+// }
 
 const sections = document.querySelectorAll("[data-anime]");
 
