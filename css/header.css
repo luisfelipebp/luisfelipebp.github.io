@@ -1,5 +1,8 @@
 .header-bg {
   background: #000000;
+  position: fixed;
+  width: 100%;
+  z-index: 9999999999;
 }
 
 .header-lista {
@@ -45,6 +48,7 @@
   background: #000000;
   z-index: 1000;
   background-attachment: fixed;
+  animation: showContainer 0.2s forwards;
 }
 
 .container-mobile nav ul {

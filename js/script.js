@@ -42,18 +42,6 @@ containerProjetos.forEach((containerProjeto) => {
 
 const menuItens = document.querySelectorAll(".header-lista a[href^='#']");
 
-// function scrollSuave(event) {
-//   event.preventDefault();
-//   const element = event.target;
-//   const id = element.getAttribute("href");
-//   const section = document.querySelector(id).offsetTop;
-
-//   window.scroll({
-//     top: section,
-//     behavior: "smooth",
-//   });
-// }
-
 const sections = document.querySelectorAll("[data-anime]");
 
 function animeScroll() {
@@ -75,7 +63,20 @@ window.addEventListener("click", desativarMenuMobile);
 
 imagens.forEach((imagem) => {
   imagem.addEventListener("mouseenter", abrirContainerImagem);
+  imagem.removeEventListener("mouseout", abrirContainerImagem);
 });
+
+function scrollSuave(event) {
+  event.preventDefault();
+  let id = event.target.hash;
+  const idSection = document.querySelector(id);
+  let idOffset = idSection.offsetTop;
+  window.scroll({
+    top: idOffset,
+    behavior: "smooth",
+  });
+}
+
 menuItens.forEach((item) => {
   item.addEventListener("click", scrollSuave);
 });
