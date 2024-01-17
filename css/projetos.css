@@ -14,6 +14,44 @@
   color: #ffffff;
 }
 
+.subtitulo-projetos {
+  color: #fff;
+  font-size: 32px;
+  padding-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-back {
+  padding: 10px 0px 50px 0px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.btn-github {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.btn-github:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+}
+
+.container-back p {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
 .projetos-imagens {
   display: flex;
   justify-content: space-between;
